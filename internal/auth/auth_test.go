@@ -26,7 +26,7 @@ func TestGetAPIKey(t *testing.T) {
 		{
 			name:      "success_ApiKey_with_token",
 			authValue: "ApiKey abc123",
-			expectKey: "abc1234",
+			expectKey: "abc123",
 			expectErr: "",
 		},
 		{
