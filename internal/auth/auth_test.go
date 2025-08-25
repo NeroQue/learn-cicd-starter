@@ -8,13 +8,13 @@ import (
 	"github.com/bootdotdev/learn-cicd-starter/internal/auth"
 )
 
-func headerWithAuthorization(v string) http.Header {
-	h := http.Header{}
-	if v != "" {
-		h.Set("Authorization", v)
-	}
-	return h
-}
+//func headerWithAuthorization(v string) http.Header {
+//	h := http.Header{}
+//	if v != "" {
+//		h.Set("Authorization", v)
+//	}
+//	return h
+//}
 
 func TestGetAPIKey(t *testing.T) {
 	tests := []struct {
