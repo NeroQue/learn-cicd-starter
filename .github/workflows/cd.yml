@@ -34,3 +34,6 @@ jobs:
 
       - name: Build and push Docker image
         run: gcloud builds submit --tag us-central1-docker.pkg.dev/sincere-cortex-470114-i6/notely-ar-repo/notely:latest .
+
+      - name: Deploy to Cloud Run
+        run: gcloud run deploy notely --image us-central1-docker.pkg.dev/sincere-cortex-470114-i6/notely-ar-repo/notely:latest --region REGION --allow-unauthenticated --project sincere-cortex-470114-i6 --max-instances=4
